@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Features Narrative Visualization</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="title-slide" class="text-center my-5">
+            <h1>Spotify Features Narrative Visualization</h1>
+            <p class="lead">An interactive visualization project to explore Spotify data across various dimensions.</p>
+            <button id="start" class="btn btn-primary">Start</button>
+        </div>
+        <div id="visualization" class="d-none">
+            <div id="scene" class="my-5"></div>
+            <div class="d-flex justify-content-between">
+                <button id="prev" class="btn btn-secondary">Previous</button>
+                <button id="next" class="btn btn-secondary">Next</button>
+            </div>
+            <div id="filter-container" class="my-3 d-none">
+                <label for="genre-select">Filter by Genre:</label>
+                <select id="genre-select" class="form-control d-inline-block w-auto">
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div id="slider-container" class="my-3">
+                <label for="yearSlider">Year: </label>
+                <input type="range" id="yearSlider" min="2000" max="2020" value="2000" class="form-control-range">
+                <span id="yearLabel">2000</span>
+            </div>
+        </div>
+    </div>
+    <div id="tooltip" class="hidden"></div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

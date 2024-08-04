@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#tooltip {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    pointer-events: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#title-slide {
+    margin-top: 100px;
+}
+
+#visualization {
+    margin-top: 20px;
+}
+
+#scene {
+    width: 100%;
+    height: 450px;
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+}
